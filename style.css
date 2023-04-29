@@ -1,0 +1,302 @@
+:root
+{
+    --turq-green: #64FFDA;
+    --dark-blue: #0A192F;
+    --light-slate: #CCD6F6;
+    --slate: #8892B0;
+}
+html {
+
+scroll-behavior: smooth;
+
+}
+body
+{
+    margin: 0px;
+    /* margin-bottom: 40px; */
+    padding: 0px;
+    /* background-image: linear-gradient(#0A192F,#0A192F,black); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* color: var(--light-slate); */
+    color: black;
+}
+ul
+{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+ul li
+{
+    list-style: none;
+    padding-left: 30px;
+}
+ul li a
+{
+    text-decoration: none;
+    /* color: var(--light-slate); */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+.items-center
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.marg-top
+{
+    margin-top: 0px;
+}
+.marg-bot
+{
+    margin-bottom: 0px;
+}
+.h1-heading
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5vw;
+    text-align: center;
+}
+p
+{
+    font-family: 'Montserrat', sans-serif;
+}
+h1
+{
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 3rem;
+}
+
+/* Navbar */
+#navbar
+{
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    /* border-bottom: 1px solid white; */
+    transition:500ms ease;
+    z-index: 2;
+    /* background: rgb(87, 86, 86); */
+    background: #4b4643;
+    color: white;
+    height: 75px;
+}
+#navbar button
+{
+    font-size: 17px;
+    width: 70%;
+    height: 50px;
+    margin: auto;
+    border-radius: 58px;
+    font-family: 'Montserrat', sans-serif;
+    background: #FFB85D;
+}
+#navbar-1 button
+{
+    border-radius: 50px;
+}
+#nav-icons
+{
+    width: 60%;
+    margin: auto;
+}
+#my-name h1
+{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.5vw;
+    margin: 1vw;
+}
+.social-icons a img
+{
+    height: 30px;
+    padding: 5px;
+}
+
+/* First Slide */
+.first-slide-text-span-1 {
+    color:#ff6000;;
+  }
+  .first-slide-text-span-1:after {
+    content:"";
+    animation: spin 5000ms linear infinite;
+  }
+  @keyframes spin {
+    0% { content:"Know";}
+    50% { 
+        content:"Learn";
+    }
+    100% { content:"Grow";}
+  }
+  .first-slide-home-1
+  {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 75px 0px;
+  }
+.first-slide-home
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: rgb(255 247 227);
+    width: 80%;
+    margin: auto;
+    border: 2px solid white;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+.first-slide-text
+{
+    margin: auto;
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Domine', serif;
+}
+.first-slide-text h1
+{
+    padding-bottom: 30px;
+    line-height: 1;
+}
+.first-slide-text h1, p
+{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.first-slide-text-1 h1
+{
+    margin: auto;
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Domine', serif;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 4rem;
+}
+.first-slide-photo
+{
+    text-align: center;
+}
+.first-slide-photo img
+{
+    text-align: center;
+    height: 400px;
+}
+.first-slide-text-1
+{
+    margin: auto;
+    width: 80%;
+}
+
+/* Reviews */
+.review-h1
+{
+    padding-left: 90px;
+    font-size: 4vw;
+}
+#reviews
+{
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.container {
+    position: relative;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 65%;
+  }
+  
+  .container:hover img{
+    opacity: 0.5;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #ff6000;
+    color: black;
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+/* FAQ Section */
+#faq-section
+{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+#faq-section details
+{
+    font-size: 20px;
+    background: rgb(26 26 26 / 38%);
+    padding: 15px;
+}
+/* Footer */
+footer
+{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    justify-content: center;
+    height: 300px;
+    background: #4b4643;
+    margin-top: 60px;
+    color: white;
+}
+footer h1
+{
+    margin: 10px 0px;
+}
+#knowmore-info
+{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+#knowmore-info img
+{
+    margin: auto;
+}
+#knowmore-company ul
+{
+    display: block;
+}
+#knowmore-company ul li
+{
+    padding-top: 10px;
+}
+#knowmore-contact p
+{
+    padding-top: 10px;
+}
+#social-icons img
+{
+    height: 30px;
+}
